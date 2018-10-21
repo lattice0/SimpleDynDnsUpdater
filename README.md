@@ -9,5 +9,5 @@ python3 SimpleDynDnsUpdater.py
 
 ``` 
 sudo docker build -t simpledyndnsupdater .
-sudo docker run -it --rm -v "$PWD":/usr/src/myapp -w /usr/src/myapp simpledyndnsupdater python SimpleDynDnsUpdater.py
+sudo docker run -it --restart unless-stopped -v "$PWD":/usr/src/myapp -w /usr/src/myapp simpledyndnsupdater python SimpleDynDnsUpdater.py
 ```
