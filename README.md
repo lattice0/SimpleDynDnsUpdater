@@ -1,5 +1,7 @@
 # SimpleDynDnsUpdater
 
+Edit the file with `username`, `password` and `hostname`. Change `enable_ipv6` to `True` if your computer supports `ipv6` 
+
 # Run 
 ```
 python3 SimpleDynDnsUpdater.py
@@ -7,7 +9,7 @@ python3 SimpleDynDnsUpdater.py
 
 # Run with Docker (automatically starts at boot)
 
-Warning: if your docker image does not support IPv6 then you need to change `enable_ipv6` to `False`
+Warning: if you want IPv6 in docker then your docker containers must support ip, otherwise you'll get errors. 
 
 ``` 
 sudo docker build -t simpledyndnsupdater .
