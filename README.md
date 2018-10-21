@@ -7,4 +7,7 @@ python3 SimpleDynDnsUpdater.py
 
 # Run with Docker (automatically starts at boot)
 
-```sudo docker run -it --restart unless-stopped --name SimpleDynDnsUpdater -v "$PWD":/usr/src/myapp -w /usr/src/myapp python:3 python SimpleDynDnsUpdater.py```
+``` 
+sudo docker build -t simpledyndnsupdater .
+sudo docker run -it --rm -v "$PWD":/usr/src/myapp -w /usr/src/myapp simpledyndnsupdater python SimpleDynDnsUpdater.py
+```
