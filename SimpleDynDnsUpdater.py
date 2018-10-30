@@ -1,3 +1,7 @@
+#To make it run on startup, clone into the home directory and put this in /etc/rc.local before 'exit' if present
+#/usr/bin/python3 /home/YOUR_USERNAME/SimpleDynDnsUpdater/SimpleDynDnsUpdater.py &>> /home/YOUR_USERNAME/SimpleDynDnsUpdater/log &
+#Todo: see the right >> syntax for sh, this is for bash
+
 import requests
 import time
 
